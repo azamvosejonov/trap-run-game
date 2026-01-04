@@ -1,0 +1,35 @@
+{
+  "name": "trap-run",
+  "version": "1.0.0",
+  "description": "A hardcore platformer game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win appx"
+  },
+  "author": "Turn Rush",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "TurnRush.TurnRush",
+    "productName": "Trap Run",
+    "win": {
+      "target": [
+        "appx"
+      ],
+      "icon": "icon.png"
+    },
+    "appx": {
+      "applicationId": "TurnRush",
+      "identityName": "TurnRush.TurnRush",
+      "publisher": "CN=61DB30CA-03ED-472F-9656-478B1CF88710",
+      "publisherDisplayName": "Turn Rush",
+      "backgroundColor": "#464646",
+      "displayName": "Trap Run"
+    }
+  }
+}

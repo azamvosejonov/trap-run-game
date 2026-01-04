@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Devil 2 - Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Yandex Games SDK -->
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="level-info">
+                <span>Level: <span id="level">1</span></span>
+                <span>Deaths: <span id="deaths">0</span></span>
+            </div>
+            <div class="instructions">
+                <p>WASD yoki Arrow Keys - Harakat</p>
+                <p>Space - Sakrash</p>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-overlay" id="gameOverlay" style="display: none;">
+            <div class="overlay-content">
+                <h2 id="overlayTitle">Level Devil 2</h2>
+                <p id="overlayText">Boshlash uchun SPACE ni bosing</p>
+                <button id="restartBtn" style="display: none;">Qayta boshlash</button>
+            </div>
+        </div>
+    </div>
+    <!-- Level Scripts -->
+    <script src="levels/init.js"></script>
+    <script src="levels/level1.js"></script>
+    <script src="levels/level2.js"></script>
+    <script src="levels/level3.js"></script>
+    <script src="levels/level4.js"></script>
+    <script src="levels/level5.js"></script>
+    <script src="levels/level6.js"></script>
+    <script src="levels/level7.js"></script>
+    <script src="levels/level8.js"></script>
+    <script src="levels/level9.js"></script>
+    <script src="levels/level10.js"></script>
+    <script src="levels/level11.js"></script>
+    <script src="levels/level12.js"></script>
+    <script src="levels/level13.js"></script>
+    <script src="levels/level14.js"></script>
+    <script src="levels/level15.js"></script>
+    <script src="levels/level16.js"></script>
+    <script src="levels/level17.js"></script>
+    <script src="levels/level18.js"></script>
+    <script src="levels/level19.js"></script>
+    <script src="levels/level20.js"></script>
+    <!-- Game Script -->
+    <script src="game.js"></script>
+</body>
+</html>
