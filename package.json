@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --win appx"
+    "dist": "electron-builder"
   },
   "author": "Turn Rush",
   "license": "ISC",
@@ -16,20 +16,17 @@
   },
   "build": {
     "appId": "TurnRush.TurnRush",
-    "productName": "Trap Run",
+    "productName": "Turn Rush",
     "win": {
-      "target": [
-        "appx"
-      ],
+      "target": ["appx"],
       "icon": "icon.png"
     },
     "appx": {
-      "applicationId": "TurnRush",
       "identityName": "TurnRush.TurnRush",
       "publisher": "CN=61DB30CA-03ED-472F-9656-478B1CF88710",
       "publisherDisplayName": "Turn Rush",
-      "backgroundColor": "#464646",
-      "displayName": "Trap Run"
+      "displayName": "Turn Rush",
+      "backgroundColor": "#464646"
     }
   }
 }
